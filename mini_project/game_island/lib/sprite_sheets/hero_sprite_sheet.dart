@@ -8,8 +8,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(32)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 32)),
       );
 
   static Future<SpriteAnimation> get playerIdleRight => SpriteAnimation.load(
@@ -17,8 +17,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(96)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 96)),
       );
 
   static Future<SpriteAnimation> get playerIdleTop => SpriteAnimation.load(
@@ -26,8 +26,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(64)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 64)),
       );
 
   static Future<SpriteAnimation> get playerIdleBot => SpriteAnimation.load(
@@ -35,8 +35,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(0)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 0)),
       );
 
   static Future<SpriteAnimation> get playerRunLeft => SpriteAnimation.load(
@@ -44,8 +44,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(32)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 32)),
       );
 
   static Future<SpriteAnimation> get playerRunRight => SpriteAnimation.load(
@@ -53,8 +53,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(96)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 96)),
       );
 
   static Future<SpriteAnimation> get playerRunTop => SpriteAnimation.load(
@@ -62,8 +62,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(64)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 64)),
       );
 
   static Future<SpriteAnimation> get playerRunBot => SpriteAnimation.load(
@@ -71,8 +71,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(0)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 0)),
       );
 
   static Future<SpriteAnimation> get getAttackBottom => SpriteAnimation.load(
@@ -80,8 +80,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(8)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 0)),
       );
 
   static Future<SpriteAnimation> get getAttackLeft => SpriteAnimation.load(
@@ -89,8 +89,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(40)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 32)),
       );
 
   static Future<SpriteAnimation> get getAttackTop => SpriteAnimation.load(
@@ -98,8 +98,8 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(72)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 64)),
       );
 
   static Future<SpriteAnimation> get getAttackRight => SpriteAnimation.load(
@@ -107,7 +107,7 @@ class HeroSpriteSheet {
         SpriteAnimationData.sequenced(
             amount: 4,
             stepTime: 0.15,
-            textureSize: Vector2.all(tileSize),
-            texturePosition: Vector2.all(104)),
+            textureSize: Vector2(tileSize, tileSize),
+            texturePosition: Vector2(0, 96)),
       );
 }

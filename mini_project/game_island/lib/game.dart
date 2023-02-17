@@ -22,6 +22,7 @@ class Game extends StatelessWidget {
         objectsBuilder: {'enemy': (properties) => EnemyT(properties.position)},
       ),
       player: HeroPlayer(Vector2(tileSize, tileSize)),
+      showCollisionArea: true,
       cameraConfig: CameraConfig(
           moveOnlyMapArea: true,
           zoom: 2,

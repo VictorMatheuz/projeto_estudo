@@ -25,7 +25,7 @@ class HeroPlayer extends SimplePlayer with ObjectCollision {
       collisions: [
         CollisionArea.rectangle(
           size: Vector2(tileSize / 2, tileSize / 2),
-          align: Vector2(0, 0),
+          align: Vector2(-5, 0),
         )
       ],
     ));
@@ -36,7 +36,7 @@ class HeroPlayer extends SimplePlayer with ObjectCollision {
       _addAttackAnimation();
       this.simpleAttackMelee(
         damage: 10,
-        size: Vector2.all(tileSize * 2),
+        size: Vector2.all(tileSize),
       );
     }
     super.joystickAction(event);
@@ -51,6 +51,14 @@ class HeroPlayer extends SimplePlayer with ObjectCollision {
       animation!.playOnce(newAnimation);
     } else if (lastDirection == Direction.left) {
       newAnimation = HeroSpriteSheet.getAttackLeft;
+      print(newAnimation);
+      animation!.playOnce(newAnimation);
+    } else if (lastDirection == Direction.down) {
+      newAnimation = HeroSpriteSheet.getAttackBottom;
+      print(newAnimation);
+      animation!.playOnce(newAnimation);
+    } else if (lastDirection == Direction.up) {
+      newAnimation = HeroSpriteSheet.getAttackTop;
       print(newAnimation);
       animation!.playOnce(newAnimation);
     }
