@@ -24,8 +24,8 @@ class HeroPlayer extends SimplePlayer with ObjectCollision {
     setupCollision(CollisionConfig(
       collisions: [
         CollisionArea.rectangle(
-          size: Vector2(tileSize / 2, tileSize / 2),
-          align: Vector2(-5, 0),
+          size: Vector2((tileSize / 2) - 6, (tileSize / 2) - 10),
+          align: Vector2(11, 18),
         )
       ],
     ));
@@ -36,7 +36,8 @@ class HeroPlayer extends SimplePlayer with ObjectCollision {
       _addAttackAnimation();
       this.simpleAttackMelee(
         damage: 10,
-        size: Vector2.all(tileSize),
+        size: Vector2.all((tileSize / 2) - 5),
+        sizePush: 2,
       );
     }
     super.joystickAction(event);
